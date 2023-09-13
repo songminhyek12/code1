@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  background-color: rgb(44, 41, 38);
+}
+
+header {
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header a {
+  color: orange;
+  text-decoration: none;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header li {
+  padding: 0 10px;
+}
+
+#main-logo {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+#menu-btn {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#menu-btn span {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+}
+
+#side-drawer {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(29, 26, 27);
+  display: none;
+}
+
+#side-drawer header {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 4rem 1rem;
+  margin: 0;
+}
+
+#side-drawer li {
+  margin: 1rem 0;
+}
+
+#side-drawer a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+main h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: orange;
+}
+
+#least-menus {
+  width: 80%;
+  margin: 50px auto;
+}
+
+#least-menus ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 1rem;
+}
+
+.food-items {
+  background-color: rgb(228, 206, 182);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.food-items img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.food-items-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: orange;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+@media (max-width: 48rem) {
+  header nav {
+    display: none;
+  }
+
+  #least-menus ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
